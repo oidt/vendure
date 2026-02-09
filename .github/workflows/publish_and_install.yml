@@ -128,7 +128,7 @@ jobs:
                   wait-on http://localhost:4873
                   npm set registry=http://localhost:4873
                   npm dist-tag ls @vendure/create
-                  npx @vendure/create@ci test-app --ci --use-npm --log-level info
+                  npx @vendure/create@ci test-app --ci --use-npm --with-storefront --log-level info
             - name: Server smoke tests
               run: |
                   cd $HOME/install/test-app
